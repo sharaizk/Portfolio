@@ -1,5 +1,10 @@
 This is my Portfolio site which is still under development.
 
+Total <b>Time Spent</b> on this project:
+<br>
+<br>
+![wakatime](https://wakatime.com/badge/user/a523f4a3-01dc-4ca0-990b-702f25ddf6b3/project/a6f4ebcf-8164-4603-ae80-27fe6223c6fa.svg)
+
 ------
 
 It is based upon ReactJS.
