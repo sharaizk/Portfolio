@@ -7,7 +7,7 @@ Total <b>Time Spent</b> on this project:
 
 ------
 
-It is based upon ReactJS.
+The website is developed using ReactJS.
 
 Website is using React Version 17.0.2
 
