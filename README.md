@@ -9,7 +9,7 @@ Total <b>Time Spent</b> on this project:
 
 The website is developed using ReactJS.
 
-Website is using React Version 17.0.2
+This project is using React Version <b>^17.0.2</b>
 
 The librarie(s) that are being used are: Styled-Components, React-Scroll, React-Icons, Hamburger-React.
 
