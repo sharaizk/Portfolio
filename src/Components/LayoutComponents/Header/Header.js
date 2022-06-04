@@ -2,13 +2,18 @@ import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarContainer,
-  NavBanner,
+  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink,
+  Logo,
 } from "./HeaderElements";
 import { Twirl as Hamburger } from "hamburger-react";
+import { theme } from "../../../theme";
+import logoImg from "assets/images/logo.png";
 const Nav = ({ isOpen, toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -27,38 +32,38 @@ const Nav = ({ isOpen, toggle }) => {
   return (
     <Navbar scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavBanner>Sharaiz Khan</NavBanner>
+        <NavLogo>
+          <Logo src={logoImg} alt="Logo" />
+          Sharaiz Khan
+        </NavLogo>
         <MobileIcon scrollNav={scrollNav}>
           <Hamburger
             toggled={isOpen}
             toggle={toggle}
-            size={25}
+            size={20}
             duration={0.35}
             easing="ease-in"
             rounded
-            color="#ffcb74"
+            color={theme.secondary}
           />
         </MobileIcon>
         <NavMenu>
-          <NavItem scrollNav={scrollNav}>
+          <NavItem>
             <NavLinks>Home</NavLinks>
           </NavItem>
-          <NavItem scrollNav={scrollNav}>
-            <NavLinks>About Me</NavLinks>
+          <NavItem>
+            <NavLinks>Service</NavLinks>
           </NavItem>
-          <NavItem scrollNav={scrollNav}>
-            <NavLinks>Services</NavLinks>
-          </NavItem>
-          <NavItem scrollNav={scrollNav}>
+          <NavItem>
             <NavLinks>Portfolio</NavLinks>
           </NavItem>
-          <NavItem scrollNav={scrollNav}>
-            <NavLinks>Blog</NavLinks>
-          </NavItem>
-          <NavItem scrollNav={scrollNav}>
-            <NavLinks>Contact</NavLinks>
+          <NavItem>
+            <NavLinks>Testimonial</NavLinks>
           </NavItem>
         </NavMenu>
+        <NavBtn>
+          <NavBtnLink>Contact Me</NavBtnLink>
+        </NavBtn>
       </NavbarContainer>
     </Navbar>
   );
