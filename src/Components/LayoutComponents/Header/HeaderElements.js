@@ -1,21 +1,52 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link as NavLink } from "react-scroll";
-import { GiHamburgerMenu } from "react-icons/gi";
-export const Navbar = styled.nav`
-  background-color: ${({ scrollNav }) =>
-    !scrollNav ? "transparent" : "rgba(0,0,0,0.15)"};
 
-  height: ${({ scrollNav }) => (!scrollNav ? "80px" : "70px")};
+const Pulse = keyframes`
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+`;
+
+export const Navbar = styled.nav`
+  height: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 1rem;
   position: fixed;
   width: 100%;
   z-index: 10;
-  transition: 0.2s height ease-out;
   backdrop-filter: ${({ scrollNav }) =>
     !scrollNav ? "blur(0px)" : "blur(10px)"};
+  transition: 0.2s all ease-out;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
     transition: 0.2s height ease;
@@ -25,23 +56,31 @@ export const Navbar = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: ${({ scrollNav }) => (!scrollNav ? "80px" : "75px")};
+  height: ${({ scrollNav }) => (!scrollNav ? "80px" : "70px")};
   z-index: 1;
   width: 100%;
-  padding: 0 50px;
-  /* max-width: 1800px; */
+  padding: 0 24px;
+  max-width: 1440px;
+  @media screen and (max-width: 320px) {
+    padding: 0;
+  }
 `;
 
-export const NavBanner = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.75rem;
-  font-family: "SkModernistRegular", "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-  color: #ffcb74;
+export const NavLogo = styled(NavLink)`
+  color: ${(props) => props.theme.secondary};
+  justify-self: flex-start;
   cursor: pointer;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", "Gill Sans", "Gill Sans MT", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+`;
+
+export const Logo = styled.img`
+  height: 50%;
+  animation: ${Pulse} 1.5s ease-in-out infinite both;
 `;
 
 export const MobileIcon = styled.div`
@@ -51,10 +90,9 @@ export const MobileIcon = styled.div`
     display: block;
     position: absolute;
     color: #3c3c3c;
-    top: 0;
+    top: 15%;
     right: 0;
-    transform: ${({ scrollNav }) =>
-      !scrollNav ? "translate(-100%, 40%)" : "translate(-100%, 50%)"};
+    transform: translate(-100%, 40%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -65,59 +103,45 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: 24px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-bottom: 0px !important;
-  @media screen and (max-width: 870px) {
+  margin-right: -22px;
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const NavItem = styled.li`
-  height: ${({ scrollNav }) => (!scrollNav ? "80px" : "70px")};
-  transition: 0.2s height ease;
+  height: 80px;
 `;
 
 export const NavLinks = styled(NavLink)`
-  color: #f6f6f6;
-  font-family: "Nunito", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  color: ${(props) => props.theme.secondary};
   display: flex;
+  font-family: "Raleway", "Gill Sans", "Gill Sans MT", sans-serif;
   align-items: center;
   text-decoration: none;
-  white-space: nowrap;
   padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
   height: 100%;
   cursor: pointer;
-  transition: all 0.05s ease-in;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  width: 100%;
   position: relative;
-  transition: 0.3s;
-
   &::after {
     content: "";
     position: absolute;
     width: 0%;
-    height: 10px;
+    height: 2px;
     bottom: 35%;
     z-index: -1;
     opacity: 0;
     border-radius: 10px;
-    background-color: #ffcb74;
+    background-color: ${(props) => props.theme.secondary};
     transition: 0.3s;
   }
   &:hover {
-    color: #fff;
     &::after {
-      width: 73%;
+      width: 20%;
       opacity: 1;
     }
   }
@@ -130,12 +154,21 @@ export const NavLinks = styled(NavLink)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 870px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-export const Icon = styled(GiHamburgerMenu)`
-  color: #f64d70;
+export const NavBtnLink = styled(NavLink)`
+  border-radius: 10px;
+  background-color: #161718;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  color: ${(props) => props.theme.background};
+  font-size: 16px;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
 `;

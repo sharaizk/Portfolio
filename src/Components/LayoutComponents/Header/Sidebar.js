@@ -13,11 +13,9 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarContainer3 isOpen={isOpen}>
           <LinkContainer>
             <NavLinks>Home</NavLinks>
-            <NavLinks>About Me</NavLinks>
-            <NavLinks>Services</NavLinks>
+            <NavLinks>Service</NavLinks>
             <NavLinks>Portfolio</NavLinks>
-            <NavLinks>Blog</NavLinks>
-            <NavLinks>Contact</NavLinks>
+            <NavLinks>Testimonial</NavLinks>
           </LinkContainer>
         </SidebarContainer3>
       </SidebarContainer2>
