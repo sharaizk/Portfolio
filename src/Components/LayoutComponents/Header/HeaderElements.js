@@ -60,7 +60,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1440px;
+  max-width: 1200px;
   @media screen and (max-width: 320px) {
     padding: 0;
   }

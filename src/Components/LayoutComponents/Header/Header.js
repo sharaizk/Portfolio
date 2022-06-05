@@ -18,7 +18,7 @@ const Nav = ({ isOpen, toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 30) {
       setScrollNav(true);
     } else {
       setScrollNav(false);

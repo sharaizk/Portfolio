@@ -46,8 +46,11 @@ export const HeroTag = styled.h2`
   margin-block-end: 0em;
   margin-inline-start: 0px;
   font-weight: 600;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1400px) {
     font-size: 4rem;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 3.75rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 3.5rem;
@@ -65,6 +68,9 @@ export const HeroDescription = styled.h4`
   font-size: 1.25rem;
   font-weight: 400;
   text-align: justify;
+  @media screen and (max-width: 1400px) {
+    font-size: 1rem;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
@@ -89,13 +95,28 @@ export const TalkBtn = styled.button`
   color: ${(props) => props.theme.secondary};
   font-weight: 600;
 
+  @media screen and (max-width: 1400px) {
+    padding: 1.7rem 0.8rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem 0.6rem;
+  }
+
   @media screen and (max-width: 280px) {
     padding: 1.25rem 2rem;
   }
+
   & span {
     border: 1.5px solid ${(props) => props.theme.secondary};
     padding: 1rem 2rem;
     border-radius: 10px;
+    @media screen and (max-width: 1400px) {
+      padding: 0.8rem 1.6rem;
+    }
+    @media screen and (max-width: 768px) {
+    padding: 0.6rem 0.8rem;
+  }
     @media screen and (max-width: 280px) {
       padding: 0.25rem 0.5rem;
     }
@@ -106,7 +127,21 @@ export const PortfolioBtn = styled.button`
   outline: none;
   border: none;
   margin-left: 2vw;
-  @media screen and (max-width: 768) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Raleway", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
     margin-left: 0;
+    margin-top: 1em;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+  & > svg {
+    margin-left: 1vw;
+    background-color: ${(props) => props.theme.primary};
   }
 `;
