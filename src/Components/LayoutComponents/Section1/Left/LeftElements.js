@@ -53,13 +53,16 @@ export const HeroTag = styled.h2`
     font-size: 3.75rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   @media screen and (max-width: 480px) {
     font-size: 2.5rem;
   }
   @media screen and (max-width: 380px) {
     font-size: 2.5rem;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -70,6 +73,9 @@ export const HeroDescription = styled.h4`
   text-align: justify;
   @media screen and (max-width: 1400px) {
     font-size: 1rem;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 0.75rem;
   }
 `;
 
@@ -104,7 +110,7 @@ export const TalkBtn = styled.button`
   }
 
   @media screen and (max-width: 280px) {
-    padding: 1.25rem 2rem;
+    padding: 0.75rem 1rem;
   }
 
   & span {
@@ -115,8 +121,8 @@ export const TalkBtn = styled.button`
       padding: 0.8rem 1.6rem;
     }
     @media screen and (max-width: 768px) {
-    padding: 0.6rem 0.8rem;
-  }
+      padding: 0.6rem 0.8rem;
+    }
     @media screen and (max-width: 280px) {
       padding: 0.25rem 0.5rem;
     }

@@ -8,7 +8,7 @@ import {
   TalkBtn,
   PortfolioBtn,
 } from "./LeftElements";
-import {BsFillArrowUpRightSquareFill} from 'react-icons/bs'
+import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 const Left = () => {
   return (
     <>
@@ -25,8 +25,9 @@ const Left = () => {
         <TalkBtn>
           <span>Let's talk with me</span>
         </TalkBtn>
-        <PortfolioBtn>Portfolio
-          <BsFillArrowUpRightSquareFill size={25}/>
+        <PortfolioBtn>
+          Portfolio
+          <BsFillArrowUpRightSquareFill size={25} />
         </PortfolioBtn>
       </ButtonsContainer>
     </>

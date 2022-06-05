@@ -89,18 +89,17 @@ export const NavLinks = styled(NavLink)`
     content: "";
     position: absolute;
     width: 0%;
-    height: 10px;
+    height: 2px;
     bottom: 35%;
     z-index: -1;
     opacity: 0;
     border-radius: 10px;
-    background-color: #ffcb74;
+    background-color: ${(props) => props.theme.secondary};
     transition: 0.3s;
   }
   &:hover {
-    color: #fff;
     &::after {
-      width: 73%;
+      width: 20%;
       opacity: 1;
     }
   }

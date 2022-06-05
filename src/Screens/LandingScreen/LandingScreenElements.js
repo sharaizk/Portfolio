@@ -2,15 +2,15 @@ import styled from "styled-components";
 // import { Link } from "react-scroll";
 export const Section1 = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10vw;
   position: relative;
-  height: 95vh;
+  height: 96vh;
   max-height: 100%;
   position: relative;
   z-index: 1;
-  padding-top: 80px;
+  padding-top: 120px;
   box-sizing: border-box;
   padding-bottom: 60px;
   @media screen and (max-width: 1000px) {
@@ -18,19 +18,14 @@ export const Section1 = styled.div`
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    height: 100vh;
-  }
-  @media screen and (max-width: 280px) {
-    height: 90vh;
   }
 `;
 
 export const LeftSection = styled.div`
   flex: 0.5;
-  height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   margin-right: 1vw;
@@ -41,11 +36,62 @@ export const LeftSection = styled.div`
   }
 `;
 export const RightSection = styled.div`
-  flex: 0.5;
+  flex: 0.4;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+`;
+
+export const Qoute = styled.div`
+  position: absolute;
+  color: ${(props) => props.theme.secondary};
+  top: 12%;
+  left: 70%;
+  font-family: "Courgette", cursive;
+  font-size: 1rem;
+
+  @media screen and (max-width: 1400px) {
+    left: 60%;
+    top: 17%;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 2%;
+    left: 70%;
+  }
+
+  @media screen and (max-width: 480px) {
+    top: 0%;
+    left: 60%;
+    font-size: 0.7rem;
+  }
+  @media screen and (max-width: 280px) {
+    left: 61%;
+    font-size: 0.5rem;
+  }
+`;
+
+export const PlayContainer = styled.div`
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  border-radius: 50%;
+  left: -7.5%;
+  cursor: pointer;
+  @media screen and (max-width: 480px) {
+    left: -13%;
+  }
 `;

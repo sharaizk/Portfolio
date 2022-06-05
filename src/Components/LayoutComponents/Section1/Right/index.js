@@ -1,11 +1,14 @@
-import React from 'react'
-import { ImageContainer } from './Elements'
+import React from "react";
+import { ImageContainer, Image } from "./Elements";
+import personalImage from "../../../../assets/images/personal.png";
 const Right = () => {
   return (
-      <>
-          <ImageContainer></ImageContainer>
-      </>
-  )
-}
+    <>
+      <ImageContainer>
+        <Image src={personalImage} />
+      </ImageContainer>
+    </>
+  );
+};
 
-export default Right
+export default Right;
