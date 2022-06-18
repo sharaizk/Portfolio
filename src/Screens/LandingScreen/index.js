@@ -10,6 +10,8 @@ import Left from "Components/LayoutComponents/Section1/Left";
 import Right from "Components/LayoutComponents/Section1/Right";
 import { GiTechnoHeart } from "react-icons/gi";
 import FollowMe from "Components/LayoutComponents/FollowMe";
+import Section2 from "Components/LayoutComponents/Section2";
+import Divider from "Components/CustomComponents/Divider";
 const LandingScreen = () => {
   return (
     <>
@@ -30,6 +32,8 @@ const LandingScreen = () => {
         </RightSection>
       </Section1>
       <FollowMe />
+      <Divider />
+      <Section2 />
     </>
   );
 };

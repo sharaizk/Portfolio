@@ -37,7 +37,7 @@ const Pulse = keyframes`
 `;
 
 export const Navbar = styled.nav`
-  height: 120px;
+  height: ${({ scrollNav }) => (!scrollNav ? "120px" : "70px")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,14 +85,15 @@ export const Logo = styled.img`
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 870px) {
+  @media screen and (max-width: 768px) {
     transition: 0.2s translate ease;
     display: block;
     position: absolute;
     color: #3c3c3c;
     top: 15%;
     right: 0;
-    transform: translate(-100%, 40%);
+    transform: ${({ scrollNav }) =>
+      !scrollNav ? "translate(-100%, 40%)" : "translate(-100%, 10%)"};
     font-size: 1.8rem;
     cursor: pointer;
   }
