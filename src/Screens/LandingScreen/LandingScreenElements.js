@@ -1,5 +1,6 @@
 import styled from "styled-components";
 // import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 export const Section1 = styled.div`
   display: flex;
   justify-content: space-between;
@@ -21,7 +22,7 @@ export const Section1 = styled.div`
   }
 `;
 
-export const LeftSection = styled.div`
+export const LeftSection = styled(motion.div)`
   flex: 0.5;
   width: 100%;
   display: flex;
@@ -54,10 +55,16 @@ export const Qoute = styled.div`
   font-family: "Courgette", cursive;
   font-size: 1rem;
 
-  @media screen and (max-width: 1400px) {
-    left: 60%;
-    top: 17%;
+  @media screen and (max-width: 1440px) {
+    left: 67%;
+    top: 10%;
     font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    left: 60%;
+    top: 12%;
+    font-size: 0.75rem;
   }
 
   @media screen and (max-width: 768px) {

@@ -24,6 +24,7 @@ const SERVICES = [
   "DevOps",
 ];
 
+
 const Section2 = () => {
   return (
     <Section2Container>

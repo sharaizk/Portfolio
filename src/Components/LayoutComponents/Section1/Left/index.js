@@ -9,19 +9,20 @@ import {
   PortfolioBtn,
 } from "./LeftElements";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
+import { variantAnimation1 } from "helpers/animationHelpers";
 const Left = () => {
   return (
     <>
-      <RoleTag>
+      <RoleTag variants={variantAnimation1}>
         <Line />
         Full Stack Developer
       </RoleTag>
-      <HeroTag>Hello, I'm Sharaiz Khan. A Full Stack Developer</HeroTag>
-      <HeroDescription>
+      <HeroTag variants={variantAnimation1}>Hello, I'm Sharaiz Khan. A Full Stack Developer</HeroTag>
+      <HeroDescription variants={variantAnimation1}>
         I'm a Full Stack Developer with 2 years of Industry Experience. I Have
         been Creating innovative applications for users all around the world.
       </HeroDescription>
-      <ButtonsContainer>
+      <ButtonsContainer variants={variantAnimation1}>
         <TalkBtn>
           <span>Let's talk with me</span>
         </TalkBtn>

@@ -12,11 +12,17 @@ import { GiTechnoHeart } from "react-icons/gi";
 import FollowMe from "Components/LayoutComponents/FollowMe";
 import Section2 from "Components/LayoutComponents/Section2";
 import Divider from "Components/CustomComponents/Divider";
+import { variantContainer } from "helpers/animationHelpers";
 const LandingScreen = () => {
   return (
     <>
       <Section1 id="home">
-        <LeftSection>
+        <LeftSection
+          variants={variantContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <Left />
         </LeftSection>
         <RightSection>
@@ -34,6 +40,8 @@ const LandingScreen = () => {
       <FollowMe />
       <Divider />
       <Section2 />
+      <Divider />
+
     </>
   );
 };

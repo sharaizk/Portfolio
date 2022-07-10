@@ -30,7 +30,17 @@ const Nav = ({ isOpen, toggle }) => {
   }, []);
 
   return (
-    <Navbar scrollNav={scrollNav}>
+    <Navbar
+      scrollNav={scrollNav}
+      initial={{
+        y: -100,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+    >
       <NavbarContainer>
         <NavLogo>
           <Logo src={logoImg} alt="Logo" />

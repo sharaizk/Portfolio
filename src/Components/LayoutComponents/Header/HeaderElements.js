@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link as NavLink } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Pulse = keyframes`
   from {
@@ -36,7 +37,7 @@ const Pulse = keyframes`
   }
 `;
 
-export const Navbar = styled.nav`
+export const Navbar = styled(motion.nav)`
   height: ${({ scrollNav }) => (!scrollNav ? "120px" : "70px")};
   display: flex;
   justify-content: center;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-export const ImageContainer = styled.div`
+import { motion } from "framer-motion";
+export const ImageContainer = styled(motion.div)`
   background-color: ${(props) => props.theme.primary};
   height: 60vh;
   width: 100%;
@@ -15,7 +15,7 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   height: 90%;
   -webkit-user-drag: none;
   user-select: none;

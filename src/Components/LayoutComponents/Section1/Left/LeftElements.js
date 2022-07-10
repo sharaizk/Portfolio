@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-export const RoleTag = styled.label`
+import { motion } from "framer-motion";
+export const RoleTag = styled(motion.label)`
   font-family: "Raleway", sans-serif;
   color: ${(props) => props.theme.secondary};
   font-size: 1rem;
@@ -13,7 +13,7 @@ export const RoleTag = styled.label`
   align-items: center;
 `;
 
-export const Line = styled.div`
+export const Line = styled(motion.div)`
   height: 1px;
   background-color: ${(props) => props.theme.secondary};
   flex: 0.1;
@@ -37,11 +37,11 @@ export const Line = styled.div`
   }
 `;
 
-export const HeroTag = styled.h2`
+export const HeroTag = styled(motion.h2)`
   color: ${(props) => props.theme.secondary};
   font-family: "Raleway", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-block-start: 0.5em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -50,23 +50,23 @@ export const HeroTag = styled.h2`
     font-size: 4rem;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 2.5rem;
   }
   @media screen and (max-width: 480px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   @media screen and (max-width: 380px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   @media screen and (max-width: 280px) {
     font-size: 1.5rem;
   }
 `;
 
-export const HeroDescription = styled.h4`
+export const HeroDescription = styled(motion.h4)`
   color: ${(props) => props.theme.tertiary};
   font-size: 1.25rem;
   font-weight: 400;
@@ -74,12 +74,15 @@ export const HeroDescription = styled.h4`
   @media screen and (max-width: 1400px) {
     font-size: 1rem;
   }
+  @media screen and (max-width: 1024px) {
+    font-size: 0.8rem;
+  }
   @media screen and (max-width: 280px) {
     font-size: 0.75rem;
   }
 `;
 
-export const ButtonsContainer = styled.div`
+export const ButtonsContainer = styled(motion.div)`
   margin-block-start: 0.5em;
   display: flex;
   justify-content: space-between;
