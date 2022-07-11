@@ -1,0 +1,25 @@
+import reactLogo from '../assets/images/reactLogo.png'
+import awsLogo from '../assets/images/awsLogo.png'
+import dockerLogo from '../assets/images/dockerLogo.png'
+import expressLogo from '../assets/images/expressLogo.png'
+import mongoLogo from '../assets/images/mongoLogo.png'
+import sqlLogo from '../assets/images/mySQL.png'
+import nextLogo from '../assets/images/nextLogo.png'
+import nginxLogo from '../assets/images/nignxLogo.png'
+import nodeLogo from '../assets/images/nodeLogo.png'
+import postmanLogo from '../assets/images/postmanLogo.png'
+import vueLogo from '../assets/images/vueLogo.png'
+
+export {
+    reactLogo,
+    awsLogo,
+    dockerLogo,
+    expressLogo,
+    mongoLogo,
+    sqlLogo,
+    nextLogo,
+    nginxLogo,
+    nodeLogo,
+    postmanLogo,
+    vueLogo
+}
