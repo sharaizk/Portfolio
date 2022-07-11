@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SVG from "react-inlinesvg";
+import { motion } from "framer-motion";
 export const Section2Container = styled.div`
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,7 @@ export const ProjectTag = styled.label`
   }
 `;
 
-export const LeftSection = styled.div`
+export const LeftSection = styled(motion.div)`
   flex: 0.5;
   width: 100%;
   display: flex;
@@ -62,7 +62,7 @@ export const RightSection = styled.div`
   }
 `;
 
-export const TagContainer = styled.div`
+export const TagContainer = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,14 +72,19 @@ export const TagContainer = styled.div`
   }
 `;
 
-export const StyledSVG = styled(SVG)`
-  transform: rotate(45deg);
+export const StyledSVG = styled(motion.svg)`
+  transform: rotate(45deg) !important;
+
   & path {
     fill: ${({ theme }) => theme.tertiary};
   }
 `;
 
-export const ServicesContainer = styled.div`
+export const StyledPath = styled(motion.path)`
+  width: 100%;
+`;
+
+export const ServicesContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +96,7 @@ export const ServicesContainer = styled.div`
   position: relative;
 `;
 
-export const Icon = styled.div`
+export const Icon = styled(motion.div)`
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -140,7 +145,7 @@ export const Services = styled.div`
   }
 `;
 
-export const ServiceTag = styled.div`
+export const ServiceTag = styled(motion.div)`
   height: 80%;
   width: 100%;
   background-color: ${({ theme }) => theme.tertiary};

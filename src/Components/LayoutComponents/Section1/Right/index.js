@@ -1,22 +1,8 @@
 import React from "react";
 import { ImageContainer, Image } from "./Elements";
 import personalImage from "../../../../assets/images/personal.png";
-import { popupContainer } from "helpers/animationHelpers";
+import { popupContainer, popupAnimation } from "helpers/animationHelpers";
 const Right = () => {
-  const imgAnimation={
-    hidden:{
-      scale:0,
-      y:200
-    },
-    visible:{
-      scale: 1,
-      y:0,
-      transition:{
-        type:"spring",
-        duration:0.8
-      }
-    },
-  }
   return (
     <>
       <ImageContainer
@@ -24,7 +10,7 @@ const Right = () => {
         initial="hidden"
         animate="visible"
       >
-        <Image src={personalImage} variants={imgAnimation}/>
+        <Image src={personalImage} variants={popupAnimation} />
       </ImageContainer>
     </>
   );
