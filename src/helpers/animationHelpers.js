@@ -34,7 +34,7 @@ export const popupContainer = {
 export const popupAnimation = {
   hidden: {
     scale: 0,
-    y: 200,
+    y: 50,
     opacity: 0,
   },
   visible: {
@@ -64,4 +64,23 @@ export const circleAnimation = {
       duration: 0.8,
     },
   },
+};
+
+export const titleAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 0.8,
+    },
+  },
+  exit:{
+    opacity: 0,
+    scale:0,
+  }
 };

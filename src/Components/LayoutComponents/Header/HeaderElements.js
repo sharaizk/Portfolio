@@ -38,15 +38,15 @@ const Pulse = keyframes`
 `;
 
 export const Navbar = styled(motion.nav)`
-  height: ${({ scrollNav }) => (!scrollNav ? "120px" : "70px")};
+  height: ${({ $scrollNav }) => (!$scrollNav ? "120px" : "70px")};
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   width: 100%;
   z-index: 10;
-  backdrop-filter: ${({ scrollNav }) =>
-    !scrollNav ? "blur(0px)" : "blur(10px)"};
+  backdrop-filter: ${({ $scrollNav }) =>
+    !$scrollNav ? "blur(0px)" : "blur(10px)"};
   transition: 0.2s all ease-out;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -57,7 +57,7 @@ export const Navbar = styled(motion.nav)`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: ${({ scrollNav }) => (!scrollNav ? "80px" : "70px")};
+  height: ${({ $scrollNav }) => (!$scrollNav ? "80px" : "70px")};
   z-index: 1;
   width: 100%;
   padding: 0 24px;
@@ -93,8 +93,8 @@ export const MobileIcon = styled.div`
     color: #3c3c3c;
     top: 15%;
     right: 0;
-    transform: ${({ scrollNav }) =>
-      !scrollNav ? "translate(-100%, 40%)" : "translate(-100%, 10%)"};
+    transform: ${({ $scrollNav }) =>
+      !$scrollNav ? "translate(-100%, 40%)" : "translate(-100%, 10%)"};
     font-size: 1.8rem;
     cursor: pointer;
   }

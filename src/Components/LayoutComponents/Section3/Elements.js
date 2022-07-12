@@ -8,22 +8,24 @@ export const Section3Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2vh 10vw;
+  margin-bottom: 10vh;
 `;
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled(motion.h2)`
   font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: 5px;
-  font-family: "SkModernistRegular", sans-serif;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   margin-bottom:1em;
+  white-space: nowrap;
   @media screen and (max-width:480px) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 `;
 
 export const TechStackContainer = styled(motion.div)`
   height: 100%;
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto, 1fr);
@@ -32,6 +34,7 @@ export const TechStackContainer = styled(motion.div)`
   place-items: center;
 
   @media screen and (max-width: 768px) {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 480px) {

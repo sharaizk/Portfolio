@@ -12,6 +12,7 @@ import { GiTechnoHeart } from "react-icons/gi";
 import FollowMe from "Components/LayoutComponents/FollowMe";
 import Section2 from "Components/LayoutComponents/Section2";
 import Section3 from "Components/LayoutComponents/Section3";
+import Section4 from "Components/LayoutComponents/Section4";
 import Divider from "Components/CustomComponents/Divider";
 import { variantContainer } from "helpers/animationHelpers";
 const LandingScreen = () => {
@@ -42,6 +43,8 @@ const LandingScreen = () => {
       <Section2 />
       <Divider />
       <Section3 />
+      <Section4 />
+      <Divider />
     </>
   );
 };

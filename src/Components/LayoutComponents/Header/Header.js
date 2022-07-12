@@ -31,7 +31,7 @@ const Nav = ({ isOpen, toggle }) => {
 
   return (
     <Navbar
-      scrollNav={scrollNav}
+      $scrollNav={scrollNav}
       initial={{
         y: -100,
         opacity: 0,
@@ -46,7 +46,7 @@ const Nav = ({ isOpen, toggle }) => {
           <Logo src={logoImg} alt="Logo" />
           Sharaiz Khan
         </NavLogo>
-        <MobileIcon scrollNav={scrollNav}>
+        <MobileIcon $scrollNav={scrollNav}>
           <Hamburger
             toggled={isOpen}
             toggle={toggle}

@@ -9,6 +9,8 @@ import nginxLogo from '../assets/images/nignxLogo.png'
 import nodeLogo from '../assets/images/nodeLogo.png'
 import postmanLogo from '../assets/images/postmanLogo.png'
 import vueLogo from '../assets/images/vueLogo.png'
+import realetMockup from '../assets/images/realet.png'
+import algopixelsMockup from '../assets/images/algopixels.png'
 
 export {
     reactLogo,
@@ -21,5 +23,7 @@ export {
     nginxLogo,
     nodeLogo,
     postmanLogo,
-    vueLogo
+    vueLogo,
+    realetMockup,
+    algopixelsMockup
 }

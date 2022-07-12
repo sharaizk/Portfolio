@@ -5,13 +5,34 @@ import {
   CardDescription,
   TextContainer,
   ImgContainer,
-  Image
+  Image,
 } from "./Element";
-const StackCard = ({ title, logo, bgSize, left, description,banner }) => {
+import { popupAnimation } from "helpers/animationHelpers";
+const StackCard = ({
+  title,
+  logo,
+  bgSize,
+  left,
+  description,
+  banner,
+  transform,
+  bottom = "-85%",
+}) => {
   return (
-    <CardContainer left={left} banner={banner} size={bgSize}>
+    <CardContainer
+      variants={popupAnimation}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      backgroundimg={logo}
+      left={left}
+      banner={banner}
+      size={bgSize}
+      transform={transform}
+      bottom={bottom}
+    >
       <ImgContainer>
-        <Image src={logo} alt="logo"/>
+        <Image src={logo} alt="logo" />
       </ImgContainer>
       <TextContainer>
         <CardTitle>{title}</CardTitle>

@@ -5,7 +5,7 @@ const StyledDivider = styled.section`
   background: #110e0f;
   height: 0.5px;
   margin-bottom: 2vh;
-  opacity: 0.25;
+  opacity: 0;
 `;
 
 const Divider = () => {
