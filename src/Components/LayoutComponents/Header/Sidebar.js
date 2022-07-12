@@ -12,9 +12,36 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarContainer2 isOpen={isOpen}>
         <SidebarContainer3 isOpen={isOpen}>
           <LinkContainer>
-            <NavLinks>Home</NavLinks>
-            <NavLinks>Service</NavLinks>
-            <NavLinks>Portfolio</NavLinks>
+            <NavLinks
+              onClick={() => toggle()}
+              to="home"
+              offset={-50}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Home
+            </NavLinks>
+            <NavLinks
+              onClick={() => toggle()}
+              to="techstack"
+              offset={-50}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Tech Stack
+            </NavLinks>
+            <NavLinks
+              onClick={() => toggle()}
+              to="portfolio"
+              offset={-50}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Portfolio
+            </NavLinks>
             <NavLinks>Testimonial</NavLinks>
           </LinkContainer>
         </SidebarContainer3>

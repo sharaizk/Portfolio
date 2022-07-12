@@ -28,7 +28,7 @@ const TechStackArray = [
     size: "100%",
     left: "80%",
     description:
-      "Being the most popular web framework, React Js provides us with a variety of flexible libraries, tools, and ecosystems to build large-scale applications for our clients",
+      "Being the most popular web framework, React Js provides us with a variety of flexible libraries, tools, and ecosystems to build large-scale applications for my clients",
     banner: "#00D8FF",
     transform: "75deg",
   },
@@ -61,7 +61,7 @@ const TechStackArray = [
     size: "100%",
     left: "80%",
     description:
-      "Unleashing the power of Server-Side Rendering in React applications, Next Js helps in indexing the content faster, resulting in SEO friendly web apps for our clients",
+      "Unleashing the power of Server-Side Rendering in React applications, Next Js helps in indexing the content faster, resulting in SEO friendly web apps for my clients",
     banner: "#000000",
     transform: "20deg",
   },
@@ -94,7 +94,7 @@ const TechStackArray = [
     size: "90%",
     left: "80%",
     description:
-      "MongoDB is a NoSQL database which we often use in combination with Node.js for majority of our apps",
+      "MongoDB is a NoSQL database which we often use in combination with Node.js for majority of my apps",
     banner: "#429933",
     transform: "15deg",
     bottom: "-80%",

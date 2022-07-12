@@ -66,7 +66,7 @@ const Nav = ({ isOpen, toggle }) => {
           <NavItem>
             <NavLinks
               to="techstack"
-              offset={0}
+              offset={-50}
               smooth
               activeClass="active"
               spy={true}
