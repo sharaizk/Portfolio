@@ -2,6 +2,8 @@ import React from "react";
 import { Section4Container, SectionTitle } from "./Elements";
 import { realetMockup, algopixelsMockup } from "helpers/assetsaConfig";
 import PortfolioItem from "Components/CustomComponents/PortfolioItem";
+import { titleAnimation } from "helpers/animationHelpers";
+
 const Section4 = () => {
   const portfolioItems = [
     {
@@ -26,8 +28,15 @@ const Section4 = () => {
     },
   ];
   return (
-    <Section4Container>
-      <SectionTitle>Portfolio</SectionTitle>
+    <Section4Container id="portfolio">
+      <SectionTitle
+        initial="hidden"
+        whileInView="visible"
+        variants={titleAnimation}
+        viewport={{ once: false }}
+      >
+        Portfolio
+      </SectionTitle>
       {portfolioItems.map((item) => {
         return (
           <PortfolioItem

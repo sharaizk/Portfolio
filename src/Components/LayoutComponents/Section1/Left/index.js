@@ -17,7 +17,9 @@ const Left = () => {
         <Line />
         Full Stack Developer
       </RoleTag>
-      <HeroTag variants={variantAnimation1}>Hello, I'm Sharaiz Khan. A Full Stack Developer</HeroTag>
+      <HeroTag variants={variantAnimation1}>
+        Hello, I'm Sharaiz Khan. A Full Stack Developer
+      </HeroTag>
       <HeroDescription variants={variantAnimation1}>
         I'm a Full Stack Developer with 2 years of Industry Experience. I Have
         been Creating innovative applications for users all around the world.
@@ -26,7 +28,7 @@ const Left = () => {
         <TalkBtn>
           <span>Let's talk with me</span>
         </TalkBtn>
-        <PortfolioBtn>
+        <PortfolioBtn to="portfolio" smooth offset={-50}>
           Portfolio
           <BsFillArrowUpRightSquareFill size={25} />
         </PortfolioBtn>

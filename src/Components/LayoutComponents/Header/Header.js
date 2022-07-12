@@ -42,7 +42,7 @@ const Nav = ({ isOpen, toggle }) => {
       }}
     >
       <NavbarContainer>
-        <NavLogo>
+        <NavLogo to="home" smooth>
           <Logo src={logoImg} alt="Logo" />
           Sharaiz Khan
         </NavLogo>
@@ -59,13 +59,31 @@ const Nav = ({ isOpen, toggle }) => {
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks>Home</NavLinks>
+            <NavLinks to="home" smooth activeClass="active" spy={true}>
+              Home
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks>Service</NavLinks>
+            <NavLinks
+              to="techstack"
+              offset={0}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Tech Stack
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks>Portfolio</NavLinks>
+            <NavLinks
+              to="portfolio"
+              offset={-50}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Portfolio
+            </NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks>Testimonial</NavLinks>

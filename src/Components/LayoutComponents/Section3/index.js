@@ -18,7 +18,7 @@ import {
   postmanLogo,
   vueLogo,
 } from "helpers/assetsaConfig";
-import { titleAnimation, popupContainer } from "helpers/animationHelpers";
+import { titleAnimation } from "helpers/animationHelpers";
 
 const TechStackArray = [
   {
@@ -160,7 +160,7 @@ const TechStackArray = [
 
 const Section3 = () => {
   return (
-    <Section3Container>
+    <Section3Container id="techstack">
       <SectionTitle
         initial="hidden"
         whileInView="visible"
@@ -170,9 +170,9 @@ const Section3 = () => {
         My Technology Stack
       </SectionTitle>
       <TechStackContainer
-        // initial="hidden"
-        // animate="visible"
-        // variants={popupContainer}
+      // initial="hidden"
+      // animate="visible"
+      // variants={popupContainer}
       >
         {TechStackArray.map((stack) => {
           return (

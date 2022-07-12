@@ -148,8 +148,10 @@ export const NavLinks = styled(NavLink)`
     }
   }
   &.active {
-    border-bottom: 3px solid #f64d70;
-    color: #f64d70;
+    &::after {
+      width: 50%;
+      opacity: 1;
+    }
   }
 `;
 

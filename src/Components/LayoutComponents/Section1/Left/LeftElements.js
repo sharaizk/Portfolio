@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 export const RoleTag = styled(motion.label)`
   font-family: "Raleway", sans-serif;
   color: ${(props) => props.theme.secondary};
@@ -132,7 +133,7 @@ export const TalkBtn = styled.button`
   }
 `;
 
-export const PortfolioBtn = styled.button`
+export const PortfolioBtn = styled(Link)`
   outline: none;
   border: none;
   margin-left: 2vw;

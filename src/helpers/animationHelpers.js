@@ -6,6 +6,14 @@ export const variantAnimation1 = {
   },
 };
 
+export const variantAnimation2 = {
+  hidden: { x: 500, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
 export const variantContainer = {
   hidden: { opacity: 1, scale: 1 },
   visible: {

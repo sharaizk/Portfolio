@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const PortfolioContainer = styled.div`
+export const PortfolioContainer = styled(motion.div)`
   height: 100%;
   width: 100%;
   display: flex;
@@ -12,7 +13,7 @@ export const PortfolioContainer = styled.div`
   }
 `;
 
-export const TextSection = styled.div`
+export const TextSection = styled(motion.div)`
   flex: 0.45;
   height: 100%;
   display: flex;
@@ -26,7 +27,7 @@ export const TextSection = styled.div`
   }
 `;
 
-export const ImageSection = styled.div`
+export const ImageSection = styled(motion.div)`
   height: 100%;
   flex: 0.45;
   display: flex;
@@ -38,11 +39,11 @@ export const ImageSection = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   width: 100%;
   height: auto;
 `;
-export const Title = styled.h4`
+export const Title = styled(motion.h4)`
   font-family: "SkModernistRegular", sans-serif;
   z-index: 1;
   font-size: 2.75rem;
@@ -54,7 +55,7 @@ export const Title = styled.h4`
     letter-spacing: 0.1rem;
   }
 `;
-export const Description = styled.p`
+export const Description = styled(motion.p)`
   margin-bottom: 1em;
   font-size: 1rem;
   text-align: justify;
@@ -62,8 +63,8 @@ export const Description = styled.p`
   line-height: 1.5rem;
 `;
 
-export const PortfolioLink = styled.a`
-    text-decoration: none;
-    font-weight: 500;
-    color: #FB325D;
+export const PortfolioLink = styled(motion.a)`
+  text-decoration: none;
+  font-weight: 500;
+  color: #fb325d;
 `;
