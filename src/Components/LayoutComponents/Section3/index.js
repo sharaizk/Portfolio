@@ -94,7 +94,7 @@ const TechStackArray = [
     size: "90%",
     left: "80%",
     description:
-      "MongoDB is a NoSQL database which we often use in combination with Node.js for majority of my apps",
+      "MongoDB is a NoSQL database which I often use in combination with Node.js for majority of my apps",
     banner: "#429933",
     transform: "15deg",
     bottom: "-80%",
@@ -141,7 +141,7 @@ const TechStackArray = [
     size: "100%",
     left: "85%",
     description:
-      "Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers",
+      "Postman is an API platform for developers to design, build, test and iterate their APIs",
     banner: "#F05A24",
     transform: "15deg",
   },
