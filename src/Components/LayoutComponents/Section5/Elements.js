@@ -12,12 +12,19 @@ export const Section5Container = styled.div`
 `;
 
 export const SectionTitle = styled(motion.h2)`
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  margin-bottom:1em;
   white-space: nowrap;
-  @media screen and (max-width:480px) {
-    font-size: 2.5rem;
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
   }
+`;
+
+export const TestimonialContainer = styled(motion.div)`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

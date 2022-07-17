@@ -35,6 +35,7 @@ export const popupContainer = {
       delayChildren: 0.25,
       staggerChildren: 0.2,
       duration: 0.25,
+      type: "spring",
     },
   },
 };
@@ -49,7 +50,6 @@ export const popupAnimation = {
     scale: 1,
     y: 0,
     opacity: 1,
-
     transition: {
       type: "spring",
       duration: 0.8,
@@ -85,6 +85,25 @@ export const titleAnimation = {
     transition: {
       type: "spring",
       duration: 0.8,
+    },
+  },
+  exit:{
+    opacity: 0,
+    scale:0,
+  }
+};
+export const subtitleAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 0.8,
+      delay:0.5
     },
   },
   exit:{

@@ -104,7 +104,7 @@ export const NavLinks = styled(NavLink)`
     }
   }
   &.active {
-    border-bottom: 3px solid #f64d70;
-    color: #f64d70;
+    border-bottom: 3px solid ${(props) => props.theme.secondary};
+    color: ${(props) => props.theme.secondary};
   }
 `;

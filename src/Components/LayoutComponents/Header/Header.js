@@ -90,7 +90,15 @@ const Nav = ({ isOpen, toggle }) => {
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink>Contact Me</NavBtnLink>
+          <NavBtnLink
+            to="contactme"
+            offset={-50}
+            smooth
+            activeClass="active"
+            spy={true}
+          >
+            Contact Me
+          </NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </Navbar>

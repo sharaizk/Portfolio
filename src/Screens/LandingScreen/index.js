@@ -14,6 +14,7 @@ import Section2 from "Components/LayoutComponents/Section2";
 import Section3 from "Components/LayoutComponents/Section3";
 import Section4 from "Components/LayoutComponents/Section4";
 import Section5 from "Components/LayoutComponents/Section5";
+import Section6 from "Components/LayoutComponents/Section6";
 import Divider from "Components/CustomComponents/Divider";
 import { variantContainer } from "helpers/animationHelpers";
 const LandingScreen = () => {
@@ -47,6 +48,8 @@ const LandingScreen = () => {
       <Section4 />
       <Divider />
       <Section5 />
+      <Divider />
+      <Section6 />
     </>
   );
 };

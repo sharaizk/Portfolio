@@ -11,6 +11,10 @@ import postmanLogo from '../assets/images/postmanLogo.png'
 import vueLogo from '../assets/images/vueLogo.png'
 import realetMockup from '../assets/images/realet.png'
 import algopixelsMockup from '../assets/images/algopixels.png'
+import fiverLogo from '../assets/images/fiverr-logo.png'
+import upworkLogo from '../assets/images/upworklogo.png'
+import linkedinLogo from '../assets/images/linkedin-logo.png'
+import algoPixels from '../assets/images/algopixelsImage.png'
 
 export {
     reactLogo,
@@ -25,5 +29,9 @@ export {
     postmanLogo,
     vueLogo,
     realetMockup,
-    algopixelsMockup
+    algopixelsMockup,
+    fiverLogo,
+    upworkLogo,
+    linkedinLogo,
+    algoPixels
 }
