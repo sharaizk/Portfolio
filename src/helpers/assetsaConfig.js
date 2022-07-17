@@ -23,7 +23,7 @@ import footer1 from "../assets/images/footer/footer1.svg";
 import footer2 from "../assets/images/footer/footer2.svg";
 import footer3 from "../assets/images/footer/footer3.svg";
 import footer4 from "../assets/images/footer/footer4.svg";
-
+import loadinganimation from "../assets/animation/loading/loading.json";
 export {
   reactLogo,
   awsLogo,
@@ -50,4 +50,5 @@ export {
   footer2,
   footer3,
   footer4,
+  loadinganimation,
 };
