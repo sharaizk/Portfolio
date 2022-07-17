@@ -22,7 +22,7 @@ import { titleAnimation } from "helpers/animationHelpers";
 import { Helmet } from "react-helmet";
 const TechStackArray = [
   {
-    id: 1,
+    id: 301,
     title: "React JS",
     logo: reactLogo,
     size: "100%",
@@ -33,7 +33,7 @@ const TechStackArray = [
     transform: "75deg",
   },
   {
-    id: 2,
+    id: 302,
     title: "Vue JS",
     logo: vueLogo,
     size: "100%",
@@ -44,7 +44,7 @@ const TechStackArray = [
     transform: "15deg",
   },
   {
-    id: 3,
+    id: 303,
     title: "React Native",
     logo: reactLogo,
     size: "100%",
@@ -55,7 +55,7 @@ const TechStackArray = [
     transform: "75deg",
   },
   {
-    id: 4,
+    id: 304,
     title: "Next Js",
     logo: nextLogo,
     size: "100%",
@@ -66,7 +66,7 @@ const TechStackArray = [
     transform: "20deg",
   },
   {
-    id: 5,
+    id: 305,
     title: "Node JS",
     logo: nodeLogo,
     size: "100%",
@@ -77,7 +77,7 @@ const TechStackArray = [
     transform: "5deg",
   },
   {
-    id: 6,
+    id: 306,
     title: "Express Js",
     logo: expressLogo,
     size: "100%",
@@ -88,7 +88,7 @@ const TechStackArray = [
     transform: "10deg",
   },
   {
-    id: 7,
+    id: 307,
     title: "Mongo DB",
     logo: mongoLogo,
     size: "90%",
@@ -100,7 +100,7 @@ const TechStackArray = [
     bottom: "-80%",
   },
   {
-    id: 8,
+    id: 308,
     title: "MySQL",
     logo: sqlLogo,
     size: "100%",
@@ -112,7 +112,7 @@ const TechStackArray = [
     transform: "15deg",
   },
   {
-    id: 9,
+    id: 309,
     title: "Amazon Web Services",
     logo: awsLogo,
     size: "100%",
@@ -124,7 +124,7 @@ const TechStackArray = [
     transform: "20deg",
   },
   {
-    id: 10,
+    id: 310,
     title: "Docker",
     logo: dockerLogo,
     size: "100%",
@@ -135,7 +135,7 @@ const TechStackArray = [
     transform: "20deg",
   },
   {
-    id: 11,
+    id: 311,
     title: "Postman",
     logo: postmanLogo,
     size: "100%",
@@ -146,7 +146,7 @@ const TechStackArray = [
     transform: "15deg",
   },
   {
-    id: 12,
+    id: 312,
     title: "NginX",
     logo: nginxLogo,
     size: "100%",

@@ -42,7 +42,16 @@ const Sidebar = ({ isOpen, toggle }) => {
             >
               Portfolio
             </NavLinks>
-            <NavLinks>Testimonial</NavLinks>
+            <NavLinks
+              onClick={() => toggle()}
+              to="testimonial"
+              offset={-50}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Testimonials
+            </NavLinks>
           </LinkContainer>
         </SidebarContainer3>
       </SidebarContainer2>

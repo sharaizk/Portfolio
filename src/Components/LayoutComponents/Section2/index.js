@@ -25,12 +25,31 @@ import {
 import { Helmet } from "react-helmet";
 
 const SERVICES = [
-  "Mobile App",
-  "Web App",
-  "Desktop App",
-  "Ui/Ux Design",
-  "SEO",
-  "DevOps",
+  {
+    id: 1,
+    title: "Mobile App",
+  },
+  {
+    id: 2,
+    title: "Web App",
+  },
+  {
+    id: 3,
+
+    title: "Desktop App",
+  },
+  {
+    id: 4,
+    title: "Ui/Ux Design",
+  },
+  {
+    id: 5,
+    title: "SEO",
+  },
+  {
+    id: 6,
+    title: "DevOps",
+  },
 ];
 
 const Section2 = () => {
@@ -95,8 +114,8 @@ const Section2 = () => {
           </IconContainer>
           <Services>
             {SERVICES.map((service, i) => (
-              <ServiceTag variants={popupAnimation} key={i}>
-                {service}
+              <ServiceTag variants={popupAnimation} key={service.id}>
+                {service.title}
               </ServiceTag>
             ))}
           </Services>
