@@ -9,6 +9,8 @@ export const Section5Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 4vh 10vw;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 `;
 
 export const SectionTitle = styled(motion.h2)`

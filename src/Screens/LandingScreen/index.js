@@ -15,12 +15,22 @@ import Section3 from "Components/LayoutComponents/Section3";
 import Section4 from "Components/LayoutComponents/Section4";
 import Section5 from "Components/LayoutComponents/Section5";
 import Section6 from "Components/LayoutComponents/Section6";
+import Footer from "Components/LayoutComponents/Footer";
 import Divider from "Components/CustomComponents/Divider";
 import { variantContainer } from "helpers/animationHelpers";
+import { Helmet } from "react-helmet";
 const LandingScreen = () => {
   return (
     <>
       <Section1 id="home">
+        <Helmet>
+          <title>Sharaiz Khan</title>
+          <meta
+            name="description"
+            content=" I'm a Full Stack Developer with 2 years of Industry Experience. I Have
+        been Creating innovative applications for users all around the world."
+          />
+        </Helmet>
         <LeftSection
           variants={variantContainer}
           initial="hidden"
@@ -50,6 +60,7 @@ const LandingScreen = () => {
       <Section5 />
       <Divider />
       <Section6 />
+      <Footer />
     </>
   );
 };

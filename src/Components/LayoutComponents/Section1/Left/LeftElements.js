@@ -93,7 +93,7 @@ export const ButtonsContainer = styled(motion.div)`
   }
 `;
 
-export const TalkBtn = styled.button`
+export const TalkBtn = styled(Link)`
   background-color: ${(props) => props.theme.primary};
   outline: none;
   border: none;

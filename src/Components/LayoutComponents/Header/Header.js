@@ -86,7 +86,15 @@ const Nav = ({ isOpen, toggle }) => {
             </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks>Testimonial</NavLinks>
+            <NavLinks
+              to="testimonial"
+              offset={-50}
+              smooth
+              activeClass="active"
+              spy={true}
+            >
+              Testimonials
+            </NavLinks>
           </NavItem>
         </NavMenu>
         <NavBtn>

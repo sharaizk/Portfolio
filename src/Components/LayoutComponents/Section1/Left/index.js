@@ -25,7 +25,7 @@ const Left = () => {
         been Creating innovative applications for users all around the world.
       </HeroDescription>
       <ButtonsContainer variants={variantAnimation1}>
-        <TalkBtn>
+        <TalkBtn to="contactme" smooth offset={-50}>
           <span>Let's talk with me</span>
         </TalkBtn>
         <PortfolioBtn to="portfolio" smooth offset={-50}>

@@ -15,7 +15,7 @@ import {
   popupAnimation,
 } from "helpers/animationHelpers";
 import { fiverLogo, upworkLogo, linkedinLogo } from "helpers/assetsaConfig";
-
+import { Helmet } from "react-helmet";
 const platforms = [
   {
     id: 101,
@@ -40,6 +40,16 @@ const platforms = [
 const Section6 = () => {
   return (
     <Section5Container id="contactme">
+      <Helmet>
+        <meta
+          name="Ready to start a project"
+          content="Get in touch
+          Fiverr
+          Upwork
+          LinkedIn
+          "
+        />
+      </Helmet>
       <SectionTitle
         initial="hidden"
         whileInView="visible"
@@ -54,7 +64,7 @@ const Section6 = () => {
         variants={subtitleAnimation}
         viewport={{ once: false }}
       >
-        Get your quotation today
+        Get in touch
       </Subtitle>
       <PlatFormContainer
         variants={popupContainer}
@@ -65,7 +75,9 @@ const Section6 = () => {
         {platforms.map((platform) => {
           return (
             <PlatformCard key={platform.id} variants={popupAnimation}>
-              <a href={platform.url} target="_blank" rel="noreferrer">.</a>
+              <a href={platform.url} target="_blank" rel="noreferrer">
+                .
+              </a>
               <CardImage src={platform.logo} />
               <CardTitle>{platform.title}</CardTitle>
             </PlatformCard>

@@ -19,7 +19,7 @@ import {
   vueLogo,
 } from "helpers/assetsaConfig";
 import { titleAnimation } from "helpers/animationHelpers";
-
+import { Helmet } from "react-helmet";
 const TechStackArray = [
   {
     id: 1,
@@ -161,6 +161,35 @@ const TechStackArray = [
 const Section3 = () => {
   return (
     <Section3Container id="techstack">
+      <Helmet>
+        <meta
+          name="My Technology Stack"
+          content="React JS
+          Being the most popular web framework, React Js provides us with a variety of flexible libraries, tools, and ecosystems to build large-scale applications for my clients, Vue JS
+          Vue.js (commonly referred to as Vue; pronounced 'view') is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
+          React Native
+          React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP.
+          Next Js
+          Unleashing the power of Server-Side Rendering in React applications, Next Js helps in indexing the content faster, resulting in SEO friendly web apps for my clients.
+          Node JS
+          Being one of the most used backend frameworks of the time, Node Js enables us to create small to large scale software solutions for majority of my clients.
+          Express Js
+          Express.js, or simply Express, is a back end web application framework for Node.js.
+          Mongo DB
+          MongoDB is a NoSQL database which I often use in combination with Node.js for majority of my apps
+          MySQL
+          Being one of the most popular database solutions of all time, MySQL proves to be very efficient for large applications.
+          Amazon Web Services
+          Amazon Web Services allows us to provide customised solutions to clients interested in large-scale yet cost-effective solutions.
+          Docker
+          Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.
+          Postman
+          Postman is an API platform for developers to design, build, test and iterate their APIs
+          NginX
+          NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server
+          "
+        />
+      </Helmet>
       <SectionTitle
         initial="hidden"
         whileInView="visible"
@@ -169,11 +198,7 @@ const Section3 = () => {
       >
         My Technology Stack
       </SectionTitle>
-      <TechStackContainer
-      // initial="hidden"
-      // animate="visible"
-      // variants={popupContainer}
-      >
+      <TechStackContainer>
         {TechStackArray.map((stack) => {
           return (
             <StackCard

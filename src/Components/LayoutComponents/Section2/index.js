@@ -22,6 +22,7 @@ import {
   popupAnimation,
   circleAnimation,
 } from "helpers/animationHelpers";
+import { Helmet } from "react-helmet";
 
 const SERVICES = [
   "Mobile App",
@@ -35,6 +36,13 @@ const SERVICES = [
 const Section2 = () => {
   return (
     <Section2Container>
+      <Helmet>
+        <title>Sharaiz Khan</title>
+        <meta
+          name="services"
+          content="02+ Years of Experience, 5 Projects Completed, Mobile App, Web App, Desktop App, Ui/Ux Design, SEO, DevOps"
+        />
+      </Helmet>
       <LeftSection
         variants={variantContainer}
         initial="hidden"

@@ -3,7 +3,7 @@ import { Section4Container, SectionTitle } from "./Elements";
 import { realetMockup, algopixelsMockup } from "helpers/assetsaConfig";
 import PortfolioItem from "Components/CustomComponents/PortfolioItem";
 import { titleAnimation } from "helpers/animationHelpers";
-
+import { Helmet } from "react-helmet";
 const Section4 = () => {
   const portfolioItems = [
     {
@@ -29,6 +29,18 @@ const Section4 = () => {
   ];
   return (
     <Section4Container id="portfolio">
+      <Helmet>
+        <meta
+          name="portfolio"
+          content="RealEt
+          RealEt is a real estate platform that merges different aspects to one platform. The project offers new feautres such as Virtual Tour & Cost Calculator. I Built this project using ReactJS, MongoDB, ExpressJS and NodeJS. It is currently deployed on AWS (EC2)
+          www.real-et.me
+          AlgoPixels
+          AlgoPixels is a NFT Editor which is based upon Algorand Blockchain. I was told to built this on Vanilla JS and the UI/UX was provided by the client. It is still an ongoing project and more features are being added to it.
+          www.algopixels.site
+          "
+        />
+      </Helmet>
       <SectionTitle
         initial="hidden"
         whileInView="visible"
