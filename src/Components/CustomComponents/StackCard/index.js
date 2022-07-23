@@ -6,8 +6,9 @@ import {
   TextContainer,
   ImgContainer,
   Image,
+  Parent,
 } from "./Element";
-import { popupAnimation } from "helpers/animationHelpers";
+import { popupAnimation, popupContainer } from "helpers/animationHelpers";
 const StackCard = ({
   title,
   logo,
@@ -19,26 +20,31 @@ const StackCard = ({
   bottom = "-85%",
 }) => {
   return (
-    <CardContainer
-      variants={popupAnimation}
+    <Parent
+      variants={popupContainer}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false }}
-      backgroundimg={logo}
-      left={left}
-      banner={banner}
-      size={bgSize}
-      transform={transform}
-      bottom={bottom}
     >
-      <ImgContainer>
-        <Image src={logo} alt="logo" />
-      </ImgContainer>
-      <TextContainer>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </TextContainer>
-    </CardContainer>
+      <CardContainer
+        variants={popupAnimation}
+        backgroundimg={logo}
+        left={left}
+        banner={banner}
+        size={bgSize}
+        transform={transform}
+        bottom={bottom}
+        key={title}
+      >
+        <ImgContainer>
+          <Image src={logo} alt="logo" />
+        </ImgContainer>
+        <TextContainer>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+        </TextContainer>
+      </CardContainer>
+    </Parent>
   );
 };
 

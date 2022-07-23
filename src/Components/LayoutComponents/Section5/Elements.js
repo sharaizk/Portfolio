@@ -10,7 +10,7 @@ export const Section5Container = styled.div`
   flex-direction: column;
   padding: 4vh 10vw;
   @media screen and (max-width: 480px) {
-    padding: 4vh 2vw;
+    padding: 4vh 8vw;
   }
 `;
 

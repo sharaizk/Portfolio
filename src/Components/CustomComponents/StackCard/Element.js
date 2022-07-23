@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+export const Parent = styled(motion.div)`
+  height: 100%;
+  width: 100%;
+`;
 export const CardContainer = styled(motion.div)`
   height: 100%;
   width: 100%;
@@ -19,32 +23,34 @@ export const CardContainer = styled(motion.div)`
 
   &::before {
     content: "";
-    background-image: ${(props)=>`url(${props.backgroundimg})`};
-    background-size: ${(props)=>props.size};
+    background-image: ${(props) => `url(${props.backgroundimg})`};
+    background-size: ${(props) => props.size};
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0%;
     right: 0px;
-    bottom: ${(props)=>props.bottom};
-    transform: ${(props)=>`rotate(${props.transform})`};
-    left: ${(props)=>props.left};
-    overflow:hidden;
+    bottom: ${(props) => props.bottom};
+    transform: ${(props) => `rotate(${props.transform})`};
+    left: ${(props) => props.left};
+    overflow: hidden;
     z-index: 0;
     opacity: 25%;
   }
 
-  &::after{
+  &::after {
     float: left;
     top: 1.5em;
     position: absolute;
     transform: rotate(-50deg);
-    background: ${(props)=>props.banner};
+    background: ${(props) => props.banner};
     color: white;
     font-weight: bold;
     left: -3em;
-    padding-left: 3em;    padding-right: 3em;
-    padding-top: .5em;    padding-bottom: .5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     border: 0px;
     margin: 0;
     z-index: 1;

@@ -18,8 +18,9 @@ import {
   postmanLogo,
   vueLogo,
 } from "helpers/assetsaConfig";
-import { titleAnimation } from "helpers/animationHelpers";
+import { titleAnimation, popupAnimation } from "helpers/animationHelpers";
 import { Helmet } from "react-helmet";
+import { AnimatePresence, motion } from "framer-motion";
 const TechStackArray = [
   {
     id: 301,
@@ -199,21 +200,23 @@ const Section3 = () => {
         My Technology Stack
       </SectionTitle>
       <TechStackContainer>
-        {TechStackArray.map((stack) => {
-          return (
-            <StackCard
-              key={stack.id}
-              bgSize={stack.size}
-              title={stack.title}
-              logo={stack.logo}
-              left={stack.left}
-              description={stack.description}
-              banner={stack?.banner}
-              transform={stack?.transform}
-              bottom={stack?.bottom}
-            />
-          );
-        })}
+        <AnimatePresence exitBeforeEnter>
+          {TechStackArray.map((stack) => {
+            return (
+              <StackCard
+                key={stack.id}
+                bgSize={stack.size}
+                title={stack.title}
+                logo={stack.logo}
+                left={stack.left}
+                description={stack.description}
+                banner={stack?.banner}
+                transform={stack?.transform}
+                bottom={stack?.bottom}
+              />
+            );
+          })}
+        </AnimatePresence>
       </TechStackContainer>
     </Section3Container>
   );

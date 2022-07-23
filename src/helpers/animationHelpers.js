@@ -53,6 +53,7 @@ export const popupAnimation = {
     transition: {
       type: "spring",
       duration: 0.8,
+      stiffness: 100 
     },
   },
 };
